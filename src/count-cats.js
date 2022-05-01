@@ -18,14 +18,15 @@ function countCats(matrix) {
   let Number= 0;
   for(let i=0; i<matrix.length; i++){
     for(let j=0; j<matrix[i].length; j++){
-      if (matrix[i][j]='^^'){
+      if (matrix[i][j]=='^^'){
         Number++;
       }
     }
   }
   if(Number){
     return Number;
-  }
+  }else
+    return 0;
 }
 
 module.exports = {
