@@ -17,7 +17,6 @@ const { NotImplementedError } = require('../extensions/index.js');
 function isMAC48Address(n) {
   const str = n.split('-');
   if (str.length !== 6) return false;
-
   const changed = str.map(num => parseInt(num, 16));
   return changed.every(item => isFinite(item));
 
